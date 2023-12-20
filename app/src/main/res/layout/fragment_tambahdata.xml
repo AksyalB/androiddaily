@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HOME.TambahdataFragment">
+
+    <RelativeLayout
+        android:id="@+id/input_form_"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FAF8EE"
+        android:clipToOutline="true">
+
+        <TextView
+            android:id="@+id/day_date_mo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="121dp"
+            android:layout_marginTop="38dp"
+            android:gravity="bottom"
+            android:letterSpacing="0.05"
+            android:text="Day, Date-Month-Year"
+            android:textColor="#283457"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/rectangle1"
+            android:layout_width="350dp"
+            android:layout_height="110dp"
+            android:layout_marginLeft="31dp"
+            android:layout_marginTop="79dp"
+            android:background="@drawable/bg_rectangle"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/how_was_you"
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:letterSpacing="0.05"
+                android:text="How was your day?"
+                android:textColor="#283457"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="95dp"
+                android:orientation="horizontal">
+
+                <RadioGroup
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:background="@drawable/radio_selector"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:button="@drawable/bg_transparant"
+                        android:drawableTop="@drawable/ic_good"/>
+
+                    <RadioButton
+                        android:background="@drawable/radio_selector"
+                        android:layout_marginStart="10dp"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:button="@drawable/bg_transparant"
+                        android:drawableTop="@drawable/ic_smile"/>
+
+                    <RadioButton
+                        android:background="@drawable/radio_selector"
+                        android:layout_marginStart="10dp"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:button="@drawable/bg_transparant"
+                        android:drawableTop="@drawable/ic_neutral"/>
+
+                    <RadioButton
+                        android:background="@drawable/radio_selector"
+                        android:layout_marginStart="10dp"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:button="@drawable/bg_transparant"
+                        android:drawableTop="@drawable/ic_sad"/>
+
+                    <RadioButton
+                        android:background="@drawable/radio_selector"
+                        android:layout_marginStart="10dp"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:button="@drawable/bg_transparant"
+                        android:drawableTop="@drawable/ic_angry"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rectangle2"
+            android:layout_width="350dp"
+            android:layout_height="110dp"
+            android:layout_marginLeft="31dp"
+            android:layout_marginTop="204dp"
+            android:background="@drawable/bg_rectangle"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/school"
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:letterSpacing="0.05"
+                android:text="School"
+                android:textColor="#283457"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="95dp"
+                android:orientation="horizontal">
+
+                <RadioGroup
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:background="@drawable/radio_selector"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:button="@drawable/bg_transparant"
+                        android:drawableTop="@drawable/ic_class"/>
+
+                    <RadioButton
+                        android:background="@drawable/radio_selector"
+                        android:layout_marginStart="10dp"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:button="@drawable/bg_transparant"
+                        android:drawableTop="@drawable/ic_exam"/>
+
+                    <RadioButton
+                        android:background="@drawable/radio_selector"
+                        android:layout_marginStart="10dp"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:button="@drawable/bg_transparant"
+                        android:drawableTop="@drawable/ic_projectgroup"/>
+
+                    <RadioButton
+                        android:background="@drawable/radio_selector"
+                        android:layout_marginStart="10dp"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:button="@drawable/bg_transparant"
+                        android:drawableTop="@drawable/ic_homework"/>
+
+                    <RadioButton
+                        android:background="@drawable/radio_selector"
+                        android:layout_marginStart="10dp"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:button="@drawable/bg_transparant"
+                        android:drawableTop="@drawable/ic_study"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rectangle3"
+            android:layout_width="350dp"
+            android:layout_height="110dp"
+            android:layout_marginLeft="31dp"
+            android:layout_marginTop="329dp"
+            android:background="@drawable/bg_rectangle"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/work"
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:letterSpacing="0.05"
+                android:text="Work"
+                android:textColor="#283457"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="95dp"
+                android:orientation="horizontal">
+
+                <RadioGroup
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:background="@drawable/radio_selector"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:button="@drawable/bg_transparant"
+                        android:drawableTop="@drawable/ic_businesstrip"/>
+
+                    <RadioButton
+                        android:background="@drawable/radio_selector"
+                        android:layout_marginStart="20dp"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:button="@drawable/bg_transparant"
+                        android:drawableTop="@drawable/ic_ontime"/>
+
+                    <RadioButton
+                        android:background="@drawable/radio_selector"
+                        android:layout_marginStart="20dp"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:button="@drawable/bg_transparant"
+                        android:drawableTop="@drawable/ic_overtime"/>
+
+                    <RadioButton
+                        android:background="@drawable/radio_selector"
+                        android:layout_marginStart="20dp"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:button="@drawable/bg_transparant"
+                        android:drawableTop="@drawable/ic_leave"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rectangle4"
+            android:layout_width="350dp"
+            android:layout_height="110dp"
+            android:layout_marginLeft="31dp"
+            android:layout_marginTop="454dp"
+            android:background="@drawable/bg_rectangle"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/today_s_not"
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:letterSpacing="0.05"
+                android:text="Today’s note"
+                android:textColor="#283457"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/this_is_the"
+                android:layout_width="274dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:letterSpacing="0.05"
+                android:text="This is the text area for today’s note. You can tell your story, emotion, or anything else in this note"
+                android:textColor="#283457"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btSave"
+            android:layout_width="190dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="111dp"
+            android:layout_marginTop="590dp"
+            android:backgroundTint="#FEB130"
+            android:text="Save" />
+
+    </RelativeLayout>
+
+</LinearLayout>

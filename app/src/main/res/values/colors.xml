@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="splash">#FF9F01</color>
+    <color name="putih_gading">#FAF8EE</color>
+    <color name="bg_utama">#FCD48F</color>
+    <color name="bghome">#FAF8EE</color>
+</resources>
