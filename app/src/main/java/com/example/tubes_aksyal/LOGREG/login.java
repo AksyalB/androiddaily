@@ -15,7 +15,9 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.tubes_aksyal.DataHelper;
+import com.example.tubes_aksyal.HOME.Home;
 import com.example.tubes_aksyal.R;
+import com.example.tubes_aksyal.SharePreferences;
 
 public class login extends AppCompatActivity {
 
@@ -27,16 +29,25 @@ public class login extends AppCompatActivity {
     TextView buttext_signin;
     boolean passvisible;
 
+    SharePreferences sharePreferences;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
         datahelper = new DataHelper(this);
+        sharePreferences = new SharePreferences(this);
         logusername = findViewById(R.id.sign_in_username);
         logpassword = findViewById(R.id.sign_in_password);
         loginbtn = findViewById(R.id.button_signin);
         buttext_signin = findViewById(R.id.buttontext_signin);
+
+        if (sharePreferences.isLoggedIn()) {
+            Intent sunglogin = new Intent(getApplicationContext(), Home.class);
+            startActivity(sunglogin);
+            finish();
+        }
 
         loginbtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -50,6 +61,7 @@ public class login extends AppCompatActivity {
                     Boolean cekuserdanpass = datahelper.cekuserdanpass(logusern,logpassw);
                     if(cekuserdanpass == true){
                         Intent home = new Intent(getApplicationContext(), com.example.tubes_aksyal.HOME.Home.class);
+                        sharePreferences.setLoginSession(true, logusern);
                         home.putExtra("username", logusern);
                         home.putExtra("password", logpassw);
                         startActivity(home);
@@ -61,6 +73,7 @@ public class login extends AppCompatActivity {
                 }
             }
         });
+
 
         buttext_signin.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -85,11 +98,11 @@ public class login extends AppCompatActivity {
                             logpassword.setCompoundDrawablesRelativeWithIntrinsicBounds(0, 0, R.drawable.visibility, 0);
                             logpassword.setTransformationMethod(HideReturnsTransformationMethod.getInstance());
                             passvisible=true;
-                            
+
                         }
                         logpassword.setSelection(selection);
                         return true;
-                        
+
                     }
                 }
                 return false;

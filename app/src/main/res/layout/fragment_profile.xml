@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FAF8EE"
+    android:id="@+id/f"
     tools:context=".HOME.ProfileFragment">
 
     <RelativeLayout
@@ -18,7 +19,8 @@
             android:background="@drawable/profile_bg"
             android:orientation="vertical">
 
-            <ImageView
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/image_profile"
                 android:layout_width="128dp"
                 android:layout_height="134dp"
                 android:layout_gravity="center_horizontal"

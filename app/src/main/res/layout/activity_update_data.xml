@@ -4,11 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".HOME.TambahdataFragment">
+    tools:context=".HOME.UpdateData">
 
     <TextView
-        android:id="@+id/date"
+        android:id="@+id/date2"
         android:layout_width="match_parent"
         android:layout_height="30dp"
         android:layout_marginTop="20dp"
@@ -35,7 +34,7 @@
         android:background="@drawable/bg_rectangle"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/date">
+        app:layout_constraintTop_toBottomOf="@+id/date2">
 
         <TextView
             android:id="@+id/how_was_you"
@@ -54,7 +53,7 @@
             android:orientation="horizontal">
 
             <RadioGroup
-                android:id="@+id/daymood"
+                android:id="@+id/daymood2"
                 android:gravity="center_horizontal"
                 android:layout_marginTop="20dp"
                 android:orientation="horizontal"
@@ -62,57 +61,50 @@
                 android:layout_height="wrap_content">
 
                 <RadioButton
-                    android:id="@+id/veryhappy"
+                    android:id="@+id/veryhappy2"
                     android:background="@drawable/radio_selector"
                     android:layout_width="60dp"
-                    android:textAlignment="center"
-                    android:layout_height="80dp"
-                    android:textSize="8dp"
+                    android:layout_height="60dp"
                     android:text="Very good"
                     android:button="@drawable/bg_transparant"
                     android:drawableTop="@drawable/ic_good"/>
 
                 <RadioButton
-                    android:id="@+id/happy"
+                    android:id="@+id/happy2"
                     android:background="@drawable/radio_selector"
                     android:layout_marginStart="10dp"
                     android:layout_width="60dp"
-                    android:textAlignment="center"
-                    android:layout_height="80dp"
-                    android:text="Good"
+                    android:layout_height="60dp"
+                    android:text="Good2"
                     android:button="@drawable/bg_transparant"
                     android:drawableTop="@drawable/ic_smile"/>
 
                 <RadioButton
-                    android:id="@+id/neutral"
+                    android:id="@+id/neutral2"
                     android:background="@drawable/radio_selector"
                     android:layout_marginStart="10dp"
                     android:layout_width="60dp"
-                    android:textAlignment="center"
-                    android:layout_height="80dp"
-                    android:textSize="11dp"
+                    android:layout_height="60dp"
                     android:text="Neutral"
                     android:button="@drawable/bg_transparant"
                     android:drawableTop="@drawable/ic_neutral"/>
 
                 <RadioButton
-                    android:id="@+id/sad"
+                    android:id="@+id/sad2"
                     android:background="@drawable/radio_selector"
                     android:layout_marginStart="10dp"
                     android:layout_width="60dp"
-                    android:textAlignment="center"
-                    android:layout_height="80dp"
+                    android:layout_height="60dp"
                     android:text="Sad"
                     android:button="@drawable/bg_transparant"
                     android:drawableTop="@drawable/ic_sad"/>
 
                 <RadioButton
-                    android:id="@+id/angry"
+                    android:id="@+id/angry2"
                     android:background="@drawable/radio_selector"
                     android:layout_marginStart="10dp"
                     android:layout_width="60dp"
-                    android:textAlignment="center"
-                    android:layout_height="80dp"
+                    android:layout_height="60dp"
                     android:text="Angry"
                     android:button="@drawable/bg_transparant"
                     android:drawableTop="@drawable/ic_angry"/>
@@ -139,7 +131,7 @@
         app:layout_constraintTop_toBottomOf="@+id/linear1">
 
         <TextView
-            android:id="@+id/school"
+            android:id="@+id/school2"
             android:layout_width="match_parent"
             android:layout_height="15dp"
             android:textAlignment="center"
@@ -155,7 +147,7 @@
             android:orientation="horizontal">
 
             <RadioGroup
-                android:id="@+id/sekolah"
+                android:id="@+id/sekolah2"
                 android:gravity="center_horizontal"
                 android:layout_marginTop="20dp"
                 android:orientation="horizontal"
@@ -163,55 +155,50 @@
                 android:layout_height="wrap_content">
 
                 <RadioButton
-                    android:id="@+id/kelas"
+                    android:id="@+id/kelas2"
                     android:background="@drawable/radio_selector"
                     android:layout_width="60dp"
-                    android:textAlignment="center"
-                    android:layout_height="80dp"
+                    android:layout_height="60dp"
                     android:text="Class"
                     android:button="@drawable/bg_transparant"
                     android:drawableTop="@drawable/ic_class"/>
 
                 <RadioButton
-                    android:id="@+id/exam"
+                    android:id="@+id/exam2"
                     android:background="@drawable/radio_selector"
                     android:layout_marginStart="10dp"
                     android:layout_width="60dp"
-                    android:textAlignment="center"
-                    android:layout_height="80dp"
+                    android:layout_height="60dp"
                     android:text="Exam"
                     android:button="@drawable/bg_transparant"
                     android:drawableTop="@drawable/ic_exam"/>
 
                 <RadioButton
-                    android:id="@+id/projectgroup"
+                    android:id="@+id/projectgroup2"
                     android:background="@drawable/radio_selector"
                     android:layout_marginStart="10dp"
                     android:layout_width="60dp"
-                    android:textAlignment="center"
-                    android:layout_height="80dp"
+                    android:layout_height="60dp"
                     android:text="Project group"
                     android:button="@drawable/bg_transparant"
                     android:drawableTop="@drawable/ic_projectgroup"/>
 
                 <RadioButton
-                    android:id="@+id/homework"
+                    android:id="@+id/homework2"
                     android:background="@drawable/radio_selector"
                     android:layout_marginStart="10dp"
                     android:layout_width="60dp"
-                    android:textAlignment="center"
-                    android:layout_height="80dp"
+                    android:layout_height="60dp"
                     android:text="Homework"
                     android:button="@drawable/bg_transparant"
                     android:drawableTop="@drawable/ic_homework"/>
 
                 <RadioButton
-                    android:id="@+id/study"
+                    android:id="@+id/study2"
                     android:background="@drawable/radio_selector"
                     android:layout_marginStart="10dp"
                     android:layout_width="60dp"
-                    android:textAlignment="center"
-                    android:layout_height="80dp"
+                    android:layout_height="60dp"
                     android:text="Study"
                     android:button="@drawable/bg_transparant"
                     android:drawableTop="@drawable/ic_study"/>
@@ -238,7 +225,7 @@
         app:layout_constraintTop_toBottomOf="@+id/linear2">
 
         <TextView
-            android:id="@+id/work"
+            android:id="@+id/work2"
             android:layout_width="match_parent"
             android:layout_height="15dp"
             android:textAlignment="center"
@@ -254,7 +241,7 @@
             android:orientation="horizontal">
 
             <RadioGroup
-                android:id="@+id/kerja"
+                android:id="@+id/kerja2"
                 android:gravity="center_horizontal"
                 android:layout_marginTop="20dp"
                 android:orientation="horizontal"
@@ -262,39 +249,36 @@
                 android:layout_height="wrap_content">
 
                 <RadioButton
-                    android:id="@+id/trip"
+                    android:id="@+id/trip2"
                     android:background="@drawable/radio_selector"
                     android:layout_width="60dp"
-                    android:textAlignment="center"
-                    android:layout_height="80dp"
+                    android:layout_height="60dp"
                     android:text="Trip"
                     android:button="@drawable/bg_transparant"
                     android:drawableTop="@drawable/ic_businesstrip"/>
 
                 <RadioButton
-                    android:id="@+id/ontime"
+                    android:id="@+id/ontime2"
                     android:background="@drawable/radio_selector"
                     android:layout_marginStart="20dp"
                     android:layout_width="60dp"
-                    android:textAlignment="center"
-                    android:layout_height="80dp"
+                    android:layout_height="60dp"
                     android:text="On time"
                     android:button="@drawable/bg_transparant"
                     android:drawableTop="@drawable/ic_ontime"/>
 
                 <RadioButton
-                    android:id="@+id/late"
+                    android:id="@+id/late2"
                     android:background="@drawable/radio_selector"
                     android:layout_marginStart="20dp"
                     android:layout_width="60dp"
-                    android:textAlignment="center"
-                    android:layout_height="80dp"
+                    android:layout_height="60dp"
                     android:text="Late"
                     android:button="@drawable/bg_transparant"
                     android:drawableTop="@drawable/ic_overtime"/>
 
                 <RadioButton
-                    android:id="@+id/left"
+                    android:id="@+id/left2"
                     android:background="@drawable/radio_selector"
                     android:layout_marginStart="20dp"
                     android:layout_width="60dp"
@@ -337,7 +321,7 @@
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/crtactivity"
+            android:id="@+id/crtactivity2"
             android:layout_width="wrap_content"
             android:layout_height="40dp"
             android:layout_marginTop="10dp"
@@ -351,16 +335,15 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/btnsave"
+        android:id="@+id/btnupdate"
         android:layout_width="150dp"
         android:layout_height="70dp"
         android:layout_marginTop="20dp"
         android:backgroundTint="#FEB130"
         android:gravity="center"
-        android:text="save"
+        android:text="update"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linear4" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

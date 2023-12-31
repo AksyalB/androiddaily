@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardMaxElevation="12dp"
+    app:cardCornerRadius="16dp"
+    android:layout_margin="16dp"
+    android:id="@+id/itemlayout"
+    >
+
+    <LinearLayout
+    android:id="@+id/linear1"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:layout_marginTop="20dp"
+    android:orientation="vertical"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    android:background="@drawable/bg_rectangle"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/date">
+
+    <TextView
+        android:id="@+id/datedata"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:textAlignment="center"
+        android:letterSpacing="0.05"
+        android:text="day-month-year"
+        android:textColor="#283457"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/usernameid"
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:textAlignment="center"
+            android:letterSpacing="0.05"
+            android:text="nama user"
+            android:textColor="#283457"
+            android:textSize="12sp"
+            android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/daymooddata"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/hwyddata"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:text="Very good"
+                android:src="@drawable/ic_good"/>
+
+            <TextView
+                android:id="@+id/schooldata"
+                android:layout_marginStart="10dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:text="Good"
+                android:src="@drawable/ic_smile"/>
+
+            <TextView
+                android:id="@+id/workdata"
+                android:layout_marginStart="10dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:text="Neutral"
+                android:src="@drawable/ic_neutral"/>
+
+<!--            <ImageView-->
+<!--                android:id="@+id/hwyddata"-->
+<!--                android:layout_width="60dp"-->
+<!--                android:layout_height="60dp"-->
+<!--                android:text="Very good"-->
+<!--                android:src="@drawable/ic_good"/>-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/schooldata"-->
+<!--                android:layout_marginStart="10dp"-->
+<!--                android:layout_width="60dp"-->
+<!--                android:layout_height="60dp"-->
+<!--                android:text="Good"-->
+<!--                android:src="@drawable/ic_smile"/>-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/workdata"-->
+<!--                android:layout_marginStart="10dp"-->
+<!--                android:layout_width="60dp"-->
+<!--                android:layout_height="60dp"-->
+<!--                android:text="Neutral"-->
+<!--                android:src="@drawable/ic_neutral"/>-->
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+        <TextView
+            android:id="@+id/notedata"
+            android:layout_width="match_parent"
+            android:layout_height="30sp"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"
+            android:text="absid"/>
+
+    </LinearLayout>
+
+
+
+
+
+</androidx.cardview.widget.CardView>
